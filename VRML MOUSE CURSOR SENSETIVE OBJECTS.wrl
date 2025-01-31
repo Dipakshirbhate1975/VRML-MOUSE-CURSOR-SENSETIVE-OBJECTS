@@ -1,0 +1,104 @@
+#VRML V2.0 utf8
+WorldInfo {
+ title "VRML MOUSE CURSOR SENSETIVE OBJECTS BY DR DIPAK SHIRBHATE"
+ info ["This Web3D Content was created with Vivaty Studio, a Web3D authoring tool"
+ "www.mediamachines.com"]
+}
+## Vizthumbnail  Thumb_VRML_MOUSE_CURSOR_SENSETIVE_OBJECTS_wrl1667461590561595.jpg
+DEF CURSOR_SENSETIVE_OBJECTS Group {
+ children [
+  DEF Transform2 Transform {
+   children [
+    DEF Sphere1 Shape {
+     appearance Appearance {
+      material DEF Yellow Material {
+       ambientIntensity 0.200
+       shininess 0.200
+       diffuseColor 1 1 0
+      }
+     }
+     geometry DEF GeoSphere1 Sphere {
+      radius 1.000
+     }
+    }
+   ]
+  }
+  DEF Sensor1 TouchSensor {
+  }
+ ]
+}
+DEF CURSOR_SENSETIVE_OBJECTS0 Group {
+ children [
+  DEF Sensor2 TouchSensor {
+  }
+  DEF Transform5 Transform {
+   translation 1.5 0 0
+   children [
+    DEF Box1 Shape {
+     appearance Appearance {
+      material DEF Red Material {
+       ambientIntensity 0.200
+       shininess 0.200
+       diffuseColor 1 0 0
+      }
+     }
+     geometry DEF GeoBox1 Box {
+      size 1 1 1
+     }
+    }
+   ]
+  }
+ ]
+}
+DEF CURSOR_SENSETIVE_OBJECTS1 Group {
+ children [
+  DEF Sensor3 TouchSensor {
+  }
+  DEF Transform8 Transform {
+   translation -1.5 0 0
+   children [
+    DEF Cone1 Shape {
+     appearance Appearance {
+      material DEF Green Material {
+       ambientIntensity 0.200
+       shininess 0.200
+       diffuseColor 0 1 0
+      }
+     }
+     geometry DEF GeoCone1 Cone {
+      height 2.000
+      bottomRadius 1.000
+     }
+    }
+   ]
+  }
+ ]
+}
+DEF CURSOR_SENSETIVE_OBJECTS2 Group {
+ children [
+  DEF Sensor4 TouchSensor {
+  }
+  DEF Transform11 Transform {
+   translation 3 0 0
+   children [
+    DEF Cylinder2 Shape {
+     appearance Appearance {
+      material DEF Cyan Material {
+       ambientIntensity 0.200
+       shininess 0.200
+       diffuseColor 0 1 1
+      }
+     }
+     geometry DEF GeoCylinder2 Cylinder {
+      height 2.000
+      radius 1.000
+     }
+    }
+   ]
+  }
+ ]
+}
+ROUTE Sensor1.hitPoint_changed TO Transform2.set_translation
+ROUTE Sensor2.hitPoint_changed TO Transform5.set_translation
+ROUTE Sensor3.hitPoint_changed TO Transform8.set_translation
+ROUTE Sensor4.hitPoint_changed TO Transform11.set_translation
